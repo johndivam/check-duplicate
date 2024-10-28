@@ -40,8 +40,8 @@ return [
             'with_deletes' => false, // Set to false to exclude soft-deleted records
         ],
         [
-            'model' => \App\Models\Project::class,
-            'columns' => ['name'],
+            'model' => \App\Models\Order::class,
+            'columns' => ['cart_id'],
             'with_deletes' => true, // Set to true to include soft-deleted records
         ],
         // Add more models as needed
