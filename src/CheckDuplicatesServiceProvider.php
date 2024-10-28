@@ -20,6 +20,12 @@ class CheckDuplicatesServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                CheckDuplicatesCommand::class,
+            ]);
+        }
+        
         $this->publishes([
             __DIR__ . '/config/check-duplicates.php' => config_path('check-duplicates.php'),
         ], 'config');
