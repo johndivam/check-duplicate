@@ -1,0 +1,25 @@
+{
+    "name": "johndivam/check-duplicate",
+    "description": "Check for duplicate rows based on specified columns across multiple models",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Johndivam\\CheckDuplicate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Johndivam\\CheckDuplicate\\CheckDuplicatesServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "johndivam"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
