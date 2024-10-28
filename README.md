@@ -19,6 +19,13 @@ composer require johndivam/check-duplicates
 
 ## Configuration
 
+Add the service provider to config/app.php under providers:
+```bash
+'providers' => [
+    Johndivam\CheckDuplicate\CheckDuplicatesServiceProvider::class,
+],
+```
+
 After installation, publish the configuration file:
 
 ```bash
