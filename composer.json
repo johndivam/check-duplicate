@@ -20,7 +20,6 @@
             "name": "johndivam"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=8.0"
     }
